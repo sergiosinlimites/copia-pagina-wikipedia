@@ -5,59 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wikipedia</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <main class="principal">
         <section class="seccion-principal">
-            <figure>
-                <img src="" alt="">
-            </figure>
+            <div class="contenido-superior">
+                <figure class="wikipedia-figura">
+                    <img src="./img/wikipedia-nombre.png" alt="Wikipedia" class="wikipedia-figura__imagen">
+                </figure>
+                <strong class="wikipedia-slogan">La enciclopedia libre</strong>
+            </div>
+            
             <div class="contenido-central">
-                <div class="contenido-central-lang lang1">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--1">
+                    <strong class="contenido-central__lenguaje">Español</strong>
+                    <small class="contenido-central__descripcion">1 659 000+ artículos</small>
                 </div>
-                <div class="contenido-central-lang lang2">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--2">
+                    <strong class="contenido-central__lenguaje">English</strong>
+                    <small class="contenido-central__descripcion">6 245 000+ articles</small>
                 </div>
-                <div class="contenido-central-lang lang3">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--3">
+                    <strong class="contenido-central__lenguaje">日本語</strong>
+                    <small class="contenido-central__descripcion">1 252 000+ 記事</small>
                 </div>
-                <div class="contenido-central-lang lang4">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--4">
+                    <strong class="contenido-central__lenguaje">Deutsch</strong>
+                    <small class="contenido-central__descripcion">2 534 000+ Artikel</small>
                 </div>
-                <div class="contenido-central-lang lang5">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--5">
+                    <strong class="contenido-central__lenguaje">Русский</strong>
+                    <small class="contenido-central__descripcion">1 697 000+ статей</small>
                 </div>
-                <div class="contenido-central-lang lang6">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--6">
+                    <strong class="contenido-central__lenguaje">Français</strong>
+                    <small class="contenido-central__descripcion">2 296 000+ articles</small>
                 </div>
-                <div class="contenido-central-lang lang7">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--7">
+                    <strong class="contenido-central__lenguaje">Italiano</strong>
+                    <small class="contenido-central__descripcion">1 672 000+ voci</small>
                 </div>
-                <div class="contenido-central-lang lang8">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--8">
+                    <strong class="contenido-central__lenguaje">中文</strong>
+                    <small class="contenido-central__descripcion">1 175 000+ <data-convert-hans data-convert-hans="条目" id="zh_art">條目</small>
                 </div>
-                <div class="contenido-central-lang lang9">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--9">
+                    <strong class="contenido-central__lenguaje">Polski</strong>
+                    <small class="contenido-central__descripcion">1 454 000+ hasel</small>
                 </div>
-                <div class="contenido-central-lang lang10">
-                    <strong class="lang__lenguaje"></strong>
-                    <small class="lang__descripcion"></small>
+                <div class="contenido-centrar__lang contenido-central__lang--10">
+                    <strong class="contenido-central__lenguaje">Português</strong>
+                    <small class="contenido-central__descripcion">1 055 000+ artigos</small>
                 </div>
             </div>
             <div class="buscador">
                 <input type="text">
-
-                <button type="button"></button>
+                <label for="buscarLenguaje" id="jsBuscarLenguaje"></label>
+                <select name="lenguaje" id="buscarLenguaje">
+                    <option value="es" lang="es">Español</option>
+                    <option value="en" lang="en">English</option>
+                    <option value="it" lang="it">Italiano</option>
+                    <option value="fr" lang="fr">Français</option>
+                </select>
+                <button type="button" id="botonCambiador"></button>
             </div>
             <button>
 
@@ -168,5 +179,6 @@
         </div>
     </footer>
     <p class="site-licence">Esta página está disponible bajo la <a href="">licencia Creative Commons Atribución-CompartirIgual</a><span>Términos de uso</span><span>Normativa de privacidad</span></p>
+    <script src="./idioma.js"></script>
 </body>
 </html>
