@@ -2,14 +2,20 @@
     
     function dimeRespuesta(){
         let idioma = document.getElementById("buscarLenguaje").value;
-        console.log(idioma);
         if(idioma == "es"){
-            alert("funciona");
+            document.getElementById("jsBuscarLenguaje").innerHTML = "ES";
         }
+        else if(idioma == "en"){
+            document.getElementById("jsBuscarLenguaje").innerHTML = "EN";
+        }
+        else if(idioma == "it"){
+            document.getElementById("jsBuscarLenguaje").innerHTML = "IT";
+        }
+        else if(idioma == "fr"){
+            document.getElementById("jsBuscarLenguaje").innerHTML = "FR";
+        }
+        setTimeout(dimeRespuesta, 1000);
     }
-
-    document.getElementById("botonCambiador").onclick = function (){
-        dimeRespuesta();
-    }
+    dimeRespuesta();
 })();
 

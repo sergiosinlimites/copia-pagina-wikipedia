@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wikipedia</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/7c35a4ac6f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main class="principal">
@@ -59,126 +60,202 @@
                     <small class="contenido-central__descripcion">1 055 000+ artigos</small>
                 </div>
             </div>
-            <div class="buscador">
-                <input type="text">
-                <label for="buscarLenguaje" id="jsBuscarLenguaje"></label>
-                <select name="lenguaje" id="buscarLenguaje">
-                    <option value="es" lang="es">Español</option>
-                    <option value="en" lang="en">English</option>
-                    <option value="it" lang="it">Italiano</option>
-                    <option value="fr" lang="fr">Français</option>
-                </select>
-                <button type="button" id="botonCambiador"></button>
-            </div>
-            <button>
-
+            <fieldset class="caja-buscador">
+                <div class="buscador">
+                    <input type="text" class="buscar-texto">
+                    <div class="abrir-lenguajes">
+                        <label for="buscarLenguaje" id="jsBuscarLenguaje" class="mostrar-lenguaje">ES</label>
+                        <span class="icono"><i class="fas fa-angle-down"></i></span>
+                    </div>
+                    <select name="lenguaje" id="buscarLenguaje" class="seleccionar-idioma">
+                        <option value="es" lang="es" class="selected">Español</option>
+                        <option value="en" lang="en">English</option>
+                        <option value="it" lang="it">Italiano</option>
+                        <option value="fr" lang="fr">Français</option>
+                    </select>
+                </div>
+                <button type="button" id="botonCambiador" class="boton-buscar"><i class="icon-lupa fas fa-search"></i></button>
+            </fieldset>
+            <button class="boton-idiomas">
+                <i class="boton-idiomas__lang fas fa-language"></i>
+                <span class="boton-idiomas__texto">Leer Wikipedia en tu idioma</span>
+                <i class="boton-idiomas__flecha fas fa-angle-down"></i>
             </button>
         </section>
     </main>
+    <hr class="separador">
     <footer class="footer">
-        <div class="footer-aside">
-            <div class="footer-aside__fundacion">
-                <i></i>
-                <span></span>
+        <div class="footer-contenido">
+            <div class="footer-fundacion">
+                <footer class="footer-fundacion__icono">
+                    <img src="./img/icono-fundacion.png" alt="Fundación Wikimedia" class="footer-fundacion__icono-imagen">
+                </footer>
+                <span class="footer-fundacion__descripcion">Wikipedia es alojada por la Fundación Wikimedia, una organización sin fines de lucro que también alberga una gama de otros proyectos.</span>
             </div>
-            <div class="footer-aside__aplicacion">
-                <i></i>
-                <h2>Descargar Wikipedia para Android o iOS</h2>
-                <p>Guarda tus artículos favoritos para leerlos sin conexión, sincroniza tus listas de lectura en varios dispositivos y personaliza tu experiencia de lectura con la aplicación oficial de Wikipedia.</p>
-                <div class="botones">
-                    <span></span>
-                    <span></span>
+            <div class="footer-aplicacion">
+                <figure class="footer-aplicacion__icono">
+                    <img src="./img/icono-descargar.png" alt="Descargar Wikipedia" class="footer-aplicacion__icono-imagen">
+                </figure>
+                <div class="aplicacion">
+                    <h2 class="aplicacion__titulo">Descargar Wikipedia para Android o iOS</h2>
+                    <p class="aplicacion__descripcion">Guarda tus artículos favoritos para leerlos sin conexión, sincroniza tus listas de lectura en varios dispositivos y personaliza tu experiencia de lectura con la aplicación oficial de Wikipedia.</p>
+                    <div class="botones-descarga">
+                        <figure class="botones__google-play">
+                            <img src="./img/google-play.png" alt="Descargar en Google Play" class="botones-descarga__imagen">
+                        </figure>
+                        <figure class="botones__app-store">
+                            <img src="./img/app-store.png" alt="Descargar en App Store" class="botones-descarga__imagen">
+                        </figure>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div>
+            
             <div class="otro-proyecto proyecto1">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href=""  class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono1.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Commons</h2>
+                        <p class="proyecto__descripcion">Fotos libremente utilizables y más</p>
+                    </div>
+                </a>
             </div>
+
             <div class="otro-proyecto proyecto2">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono2.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Wikiviajes</h2>
+                        <p class="proyecto__descripcion">La guía de viajes libre</p>
+                    </div>
+                </a>
             </div>
+
             <div class="otro-proyecto proyecto3">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono3.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Wikcionario</h2>
+                        <p class="proyecto__descripcion">El diccionario libre</p>
+                    </div>
+                </a>
             </div>
+
             <div class="otro-proyecto proyecto4">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono4.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Wikilibros</h2>
+                        <p class="proyecto__descripcion">Libros de contenido libre</p>
+                    </div>
+                </a>
             </div>
+
             <div class="otro-proyecto proyecto5">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono5.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Wikinoticias</h2>
+                        <p class="proyecto__descripcion">La fuente de noticias libres</p>
+                    </div>
+                </a>
             </div>
+
             <div class="otro-proyecto proyecto6">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono6.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Wikidata</h2>
+                        <p class="proyecto__descripcion">Base de conocimiento libre</p>
+                    </div>
+                </a>
             </div>
+
             <div class="otro-proyecto proyecto7">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono7.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Wikiversidad</h2>
+                        <p class="proyecto__descripcion">Plataforma educativa libre</p>
+                    </div>
+                </a>
             </div>
+
             <div class="otro-proyecto proyecto8">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono8.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Wikiquote</h2>
+                        <p class="proyecto__descripcion">La colección de citas</p>
+                    </div>
+                </a>    
             </div>
+
             <div class="otro-proyecto proyecto9">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono9.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">MediaWiki</h2>
+                        <p class="proyecto__descripcion">Aplicación wiki libre y abierta</p>
+                    </div>
+                </a>
             </div>
+
             <div class="otro-proyecto proyecto10">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono10.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Wikisource</h2>
+                        <p class="proyecto__descripcion">La biblioteca libre</p>
+                    </div>
+                </a>
             </div>
+
             <div class="otro-proyecto proyecto11">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono11.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Wikispecies</h2>
+                        <p class="proyecto__descripcion">Directorio de especies libre</p>
+                    </div>
+                </a>     
             </div>
+
             <div class="otro-proyecto proyecto12">
-                <i></i>
-                <div>
-                    <h2></h2>
-                    <p></p>
-                </div>
+                <a href="#" class="otro-proyecto">
+                    <figure class="otro-proyecto__icono">
+                        <img src="./img/proyecto-icono12.png" alt="icono" class="otro-proyecto__icono-imagen">
+                    </figure>
+                    <div class="proyecto">
+                        <h2 class="proyecto__titulo">Meta-Wiki</h2>
+                        <p class="proyecto__descripcion">Coordinación y documentación comunitaria</p>
+                    </div>
+                </a>  
             </div>
-        </div>
+        </div>       
     </footer>
-    <p class="site-licence">Esta página está disponible bajo la <a href="">licencia Creative Commons Atribución-CompartirIgual</a><span>Términos de uso</span><span>Normativa de privacidad</span></p>
+    <p class="site-licence">Esta página está disponible bajo la <a href="#">licencia Creative Commons Atribución-CompartirIgual</a> · <a href="#">Términos de uso</a> · <a href="#">Normativa de privacidad</a> </p>
     <script src="./idioma.js"></script>
 </body>
 </html>
